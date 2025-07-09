@@ -170,7 +170,7 @@ const AssignRider = () => {
                     </div>
                     <button
                       className="btn btn-sm btn-success text-white"
-                      onClick={() => handleAssignToRider(rider._id)}
+                      onClick={() => handleAssignToRider(rider)}
                     >
                       Confirm
                     </button>
