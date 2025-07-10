@@ -12,6 +12,8 @@ import {
   FaUserShield,
   FaUserPlus,
   FaTruckMoving,
+  FaCheckCircle,
+  FaMoneyBillWave,
 } from "react-icons/fa";
 import { MdTrackChanges } from "react-icons/md";
 import useUserRole from "../Hooks/useUserRole";
@@ -101,6 +103,20 @@ const DashboardLayout = () => {
                 <NavLink to="/dashboard/pendingDeliveries">
                   <FaTruckMoving className="inline-block mr-2" />
                   Pending Deliveries
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/dashboard/completedDeliveries">
+                  <FaCheckCircle className="inline-block mr-2 text-green-600" />
+                  Completed Deliveries
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/dashboard/myEarnings">
+                  <FaMoneyBillWave className="inline-block mr-2 text-emerald-600" />
+                  My Earnings
                 </NavLink>
               </li>
             </>
